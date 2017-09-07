@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en" class="alicloud-login">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <![endif]-->
+    <meta name="robots" content="noodp, noydir"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <!--
+<link rel="stylesheet" type="text/css" href="//static.aliyun.com/??css/common/alipw_skin.css,css/user-center/account.css?v=579226" />
+-->
+<!--
+<link rel="stylesheet" type="text/css" href="//static.aliyun.com/??css/www-knight/dpl/widget/footer.css?v=579226" />
+-->
+<link rel="stylesheet" href="//g.alicdn.com/??aliyun/www-dpl/0.5.73/knight/css/global.css,aliyun/www-dpl/0.5.73/knight/css/iconfont.css,aliyun/www-dpl/0.5.73/knight/css/dpl.css"/>
+<link rel="stylesheet" href="//g.alicdn.com/aliyun/account/0.0.25/css/account_common.css?v=579226"/>
+    <link rel="stylesheet"
+          href="//g.alicdn.com/aliyun/account/0.0.25/css/login/login.css?v=579226">
+
+    <style type="text/css">
+        body, button, input, select, textarea, h2, a, p {
+            font-family: "HelveticaNeue", "Helvetica", "Arial", "sans-serif" !important;
+        }
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content=" ECS, Cloud Host, Elastic Computing, Cloud Storage, Open Storage, OSS, ACE, Database, mysql, ApsaraDB, SQLSERVER, Developer, Server Load Balancer, Attack Prevention, Anti-DDOS, Cloud Monitor, Cloud Browser, Cloud Map, Alibaba Mail, phpwind, Alibaba Cloud, Cloud Product, Cloud Computing, Multiline Bandwidth, BGP, Server Environment Configuration, Rendering Cloud, Cloud Phone, Alibaba Cloud Security, Application Hosting, Cloud Engine, Solution " name="keywords" />
+<meta content=" Alibaba Cloud: No. 1 data sharing platform, No. 1 cloud computing platform, cloud product solutions, multiline dedicated bandwidth, developers' platform, webmasters' platform " name="description" />
+    <meta name="data-spm" content="5176"/>
+<title> Login </title>
+<link rel="shortcut icon" href="//g.alicdn.com/aliyun/account/0.0.25/css/images/favicon-32.png" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="https://g.alicdn.com/??alicloud-components/kloud/0.0.3/vendor/bootstrap/css/bootstrap.min.css,alicloud-components/kloud/0.0.57/stylesheets/common.css ">
+    <script src='//g.alicdn.com/??alicloud-components/kloud/0.0.41/vendor/requirejs/require.js,alicloud-components/common/scripts/layout.js'></script>
+    <script type="text/javascript" src="//g.alicdn.com/aliyun/static/0.0.4/retcode.js" crossorigin></script>
+</head>
+
+<body class="aliyun" data-spm="3047821"><script type="text/javascript">
+(function (d) {
+var t=d.createElement("script");t.type="text/javascript";t.async=true;t.id="tb-beacon-aplus";
+t.setAttribute("exparams","category=&userid=&aplus&yunid=&yunpk=");
+t.src="//g.alicdn.com/alilog/mlog/aplus_int.js";
+d.getElementsByTagName("head")[0].appendChild(t);
+})(document);
+</script>
+
+
+<div id="default-login-header" class="alicloud-login-header">
+    </div>
+
+<div class="content y-row" data-spm="2">
+        <!-- 无背景图片 有小banner-->
+        <div id="login-banner" class="alicloud-intl-login-banner">
+                    </div>
+
+    <div id="login-module">
+        <div id="alibaba-login-iframe">
+            <div id="alibaba-login-iframe-loading"></div>
+        </div>
+    </div>
+</div>
+
+<div id="default-login-footer" class="alicloud-login-footer">
+    </div>
+
+<script src="//g.alicdn.com/aliyun/account/0.0.25/js/jQuery1.9.0.js?v=579226"></script>
+<script src="https://g.alicdn.com/vip/havana-login/0.2.6/js/mini-login-embedder-min.js"></script>
+<script src="//g.alicdn.com/aliyun/account/0.0.25/js/login/login.js?v=579226"></script>
+<script>
+    var miniLoginEmbedder = new window.MiniLoginEmbedder();
+
+    //监听登录完成后的消息，resize已被监听
+    miniLoginEmbedder.addEvent('onMessage', function (args) {
+        var nCode = args.nCode ? args.nCode : "";
+        var rType = args.rType ? args.rType : "";
+        if (args.action && args.action == "hasLoginResult") {
+            if (args.st) {
+                location.href = "/login/login_aliyun.htm?st=" + args.st + "&nCode=" + nCode + "&rType=" + rType + "&params=%7B%22site%22%3A%226%22%2C%22umidToken%22%3A%22Yff6b015611eb5c832c3f7696d683c879%22%2C%22ru%22%3A%22https%3A%2F%2Fecs-buy-intl.aliyun.com%2F%3Fspm%3D5176.2020520101.105.d10.6029e411tzA9p5%22%7D";
+                return;
+            } else {
+                location.href = location.href;
+                return;
+            }
+        }
+        if (args.action && args.action == "loginResult") {
+            if (args.st) {
+                if (args.authSite) {
+                    location.href = "/login/login_aliyun.htm?st=" + args.st + "&nCode=" + nCode + "&rType=" + rType + "&authSite=" + args.authSite + "&params=%7B%22site%22%3A%226%22%2C%22umidToken%22%3A%22Yff6b015611eb5c832c3f7696d683c879%22%2C%22ru%22%3A%22https%3A%2F%2Fecs-buy-intl.aliyun.com%2F%3Fspm%3D5176.2020520101.105.d10.6029e411tzA9p5%22%7D";
+                } else {
+                    location.href = "/login/login_aliyun.htm?st=" + args.st + "&nCode=" + nCode + "&rType=" + rType + "&params=%7B%22site%22%3A%226%22%2C%22umidToken%22%3A%22Yff6b015611eb5c832c3f7696d683c879%22%2C%22ru%22%3A%22https%3A%2F%2Fecs-buy-intl.aliyun.com%2F%3Fspm%3D5176.2020520101.105.d10.6029e411tzA9p5%22%7D";
+                }
+                return;
+            }
+        }
+    });
+
+    miniLoginEmbedder.init({
+        targetId: 'alibaba-login-iframe',
+        appName: 'intl-aliyun',
+        appEntrance: 'intl-aliyun',
+        iframeUrl: 'https://ipassport.alibaba.com/mini_login.htm',
+        lang: 'en_US',
+        notLoadSsoView: '',
+        notKeepLogin: 'true',
+        iframeHeight: '305px',
+        queryStr: '&regUrl=https%3A%2F%2Faccount.alibabacloud.com%2Fregister%2Fintl_register.htm%3Foauth_callback%3Dhttps%253A%252F%252Fecs-buy-intl.aliyun.com%252F%253Fspm%253D5176.2020520101.105.d10.6029e411tzA9p5&returnUrl=http%3A%2F%2Faccount.alibabacloud.com%2Flogin%2Flogin_aliyun.htm%3Foauth_callback%3Dhttps%253A%252F%252Fecs-buy-intl.aliyun.com%252F%253Fspm%253D5176.2020520101.105.d10.6029e411tzA9p5',
+        loginId: ''
+    });
+</script>
+</body>
+</html>
+
+	<div  id="_umfp" style="display:inline;width:1px;height:1px;overflow:hidden">
+	<img src="https://sgynuf.alibaba.com/service/clear.png?xt=Yff6b015611eb5c832c3f7696d683c879&xa=aliyun_idserver_mfa" />
+	</div>
+	<script type="text/javascript" src="https://assets.alicdn.com/g/security/umscript/2.0.7/um.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	var container = document.getElementById('_umfp');
+	um.init({
+	    timeout: 3000,
+	    token: 'Yff6b015611eb5c832c3f7696d683c879',
+	    timestamp: '11432426505D5D43534D677B',
+	    serviceUrl: 'https://sgynuf.alibaba.com/service/um.json',
+	    appName: 'aliyun_idserver_mfa',
+	    containers:{flash:container ,dcp:container}
+	});
+	</script>
